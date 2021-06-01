@@ -38,7 +38,8 @@ const IngredientForm = React.memo(props => {
               type="text"
               id="title"
               value={enteredTitle}
-              onChange={changeHandler} />
+              onChange={changeHandler}
+              maxlength="20" />
           </div>
           <div className="form-control">
             <label htmlFor="amount">Amount</label>
@@ -46,7 +47,8 @@ const IngredientForm = React.memo(props => {
               type="number"
               id="amount"
               value={enteredAmount}
-              onChange={changeHandler} />
+              onChange={changeHandler}
+            />
           </div>
           <div className="ingredient-form__actions">
             <button type="submit">Add Ingredient</button>
